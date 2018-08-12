@@ -14,7 +14,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="header">
             <div class="col">
                 <div class="page-header text-center">
                     <h1>BookLook
@@ -40,8 +40,19 @@
             </div>
         </div>
     </div>
-    <script src="/node_modules/handlebars/dist/handlebars.js"></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/handlebars/dist/handlebars.js"></script>
+    <script id="book-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center">{{title}}</h3>
+          <p class="text-center">{{description}}</p>
+          <h3 class="text-center">Written By: {{author}}</h3>
+          <img src="{{image}}" class="rounded mx-auto d-block"> 
+        </div>
+      </div>
+      <hr>
+    </script>
     <script src="script.js"></script>
 </body>
 
