@@ -1,3 +1,3 @@
 # booklook
-An app that will search a book database
-Using Ajax for API calls, Jquery to manipulate the DOM and Handelbars for templating.
+An app that searches for books in Google Books API, and updates the DOM with results.
+Using Ajax for API calls, Jquery to manipulate the DOM and Handlebars for templating.
